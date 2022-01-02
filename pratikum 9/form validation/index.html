@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form Validasi</title>
+		<script src="JS/validation.js"></script>
+	</head>
+
+	<body>
+		<!-- Kerangka -->
+		<div>
+			<!-- Header Form -->
+			<div>
+  				<div>
+    				<h2 align="center">CUSTOMER</h2>
+  				</div>
+			</div>
+			<br>
+			<!-- Form Validasi -->
+			<center>
+			<form method="request" name="formku">
+				<input type="text" id="name" name="name" onKeyPress="return maxlength(event)" placeholder="Nama Pelanggan" required /><br>
+				<input type="email" id="email" name="email" placeholder="Email" required /><br>
+ 				<input type="time" id="jam" name="jam" required /><br>
+				<center>
+							<select name="tujuan" id="tujuan" required>
+								<option value="0">TUJUAN KEBERANGKATAN</option>
+								<option value="AMERIKA"> AMERIKA  </option>
+								<option value="JAPAN"> JAPAN  </option>
+								<option value="KOREA"> KOREA  </option>
+								<option value="SINGAPORE"> SINGAPORE  </option>
+								<option value="TURKEY"> TURKEY  </option>
+								<option value="RUSSIA"> RUSSIA  </option>
+							</select>
+					
+					</center>
+				<br>
+				<input type="text" id="jmltiket" name="jmltiket" placeholder="Jumlah Tiket " onKeyUp="angka(this)" maxlength="2" required /><br>
+ 
+				<input type="submit" onClick="return validasi()" value="Kirim">
+			</form>
+			
+			<div id="chatbox"></div>
+			</center>
+		</div>
+	</body>
+</html>

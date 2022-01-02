@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3.2 | A Web Page</title>
+</head>
+
+<body
+    style="background-color: white; text-decoration: none;padding: 0;margin: 0;font-family: sans-serif; color: black;">
+    <div>
+        <ul
+            style="border: 1px solid;text-align: left;margin-left: 100px;margin-right: 100px;padding: 10px;border-radius: 10px; background-color: lightgrey;">
+            <li style="display: inline; padding-left: 15px;">Home</li>
+            <li style="display: inline; padding-left: 100px;">Generate Link</li>
+            <li style="display: inline; padding-left: 100px;">Transaction History</li>
+            <li style="display: inline; padding-left: 100px;">Policy</li>
+            <li style="display: inline; padding-left: 100px;">Logout</li>
+            <hr style="border-color:black;">
+            <form>
+                <datalist id="Bank">
+                    <option value="BNI"> </option>
+                    <option value="HSBC"> </option>
+                </datalist>
+                <table border="0">
+                    <tbody>
+                        <tr>
+                            <td rowspan="3"> <img src="kerudung.jpeg" width="200" alt=""> </td>
+                            <td><label for="title">Title Here</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="" id="title"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Description">Description</label></td>
+                            <td>:</td>
+                            <td><textarea name="" id="Description" cols="21" rows="6"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Number">Account Number</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="" id="Number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Upload Image"></td>
+                            <td><label for="B">Bank</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="" id="B" list="Bank"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><label for="Holder">Account Holder</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="" id="Holder"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><label for="T">Transaction</label></td>
+                            <td>:</td>
+                            <td><select class="dropdown">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="font-size: small;"> * if transaction is for 3 person, choose 3 from the drop-down
+                                list </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="checkbox" name="" id="">Send to Mobile Phone</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="checkbox" name="" id="">Send to Email</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><label for="SM">Send to Mobile Phone</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="" id="SM"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><label for="SE">Send to Email</label></td>
+                            <td>:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="submit" value="Generate Nobr Link"
+                                    style="background-color: darkgreen; color: white;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </ul>
+    </div>
+
+</body>
+
+</html>
